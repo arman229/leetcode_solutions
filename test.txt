@@ -1,17 +1,1 @@
-class Solution(object):
-    def letterCombinations(self, digits):
-        """
-        :type digits: str
-        :rtype: List[str]
-        """
-        mapping_dict = {"2":"abc","3":"edf","4":"ghi","5":"jkl","6":"mno","7":"pqrs","8":"tuv","9":"wxyz"}
-        test = []
-        def databrak(index,val):
-            if len(val) == len(digits):
-                return test.append(val) 
-            
-            for i in mapping_dict[digits[index]]:
-                databrak(index+1,val+i)
-        databrak(0,'')
-sol = Solution()
-print(sol.letterCombinations("23"))
+ 
