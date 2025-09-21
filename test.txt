@@ -1,1 +1,28 @@
- 
+ class Solution(object):
+    def spellchecker(self, wordlist, queries):
+        """
+        :type wordlist: List[str]
+        :type queries: List[str]
+        :rtype: List[str]
+        """
+        resp = {}
+        res_list = []
+        for q in queries:
+            for wl in wordlist:
+                if wl == q:
+                    res_list.append(q)
+                    break
+                elif wl.lower()==q:
+                    res_list.append(q)
+                    break
+                elif wl.lower()=q.lower():
+                    resp['match']=True
+            else:
+                res_list.append(q)
+            resp['match'] = False
+        return res_list
+
+
+        
+sol = Solution()
+print(sol.spellchecker(["KiTe","kite","hare","Hare"],["kITE"]))
