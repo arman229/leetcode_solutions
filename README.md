@@ -17,3 +17,9 @@ median = (first_middle + second_middle)/2
 A hashtable (also called hash map) is a data structure that stores data in key–value pairs for fast lookup.
 Key → like a unique label (e.g., "name")
 Value → the actual data associated with the key (e.g., "Arman")
+
+## What is Heap?
+A heap is a binary-tree-based data structure that keeps the highest-priority element at the top, so we can access it very quickly.
+
+For a min-heap, the smallest is on top.
+For a max-heap, the largest is on top.
